@@ -1,0 +1,236 @@
+/* --------------- СКИДАННЯ СТИЛІВ------------------ */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+img,
+picture,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ---------------- ЗМІННІ------------------ */
+
+:root {
+  /* --primary-brand-color: #4d5ae5;
+    --pressed-state-color: #404bbf;
+    --dark-bg-color: #2e2f42;
+    --dark-bg-70-color: rgba(46, 47, 66, 0.7);
+    --dark-bg-40-color: rgba(46, 47, 66, 0.4);
+    --succes-100-color: #31d0aa;
+    --succes-75-color: rgba(49, 208, 170, 0.75);
+    --succes-50-color: rgba(49, 208, 170, 0.5);
+    --succes-10-color: rgba(49, 208, 170, 0.1); */
+  --main-txt-color: #434455;
+  /* --subtle-text-color: #8e8f99;
+    --accent-color: #e7e9fc;
+    --light-bg-color: #f4f4fd; */
+  --primary-bg-color: #e5e5e5;
+  --white-color: #ffffff;
+  /* --modal-background-color: #fcfcfc; */
+
+  /* Animation */
+  --transitionef: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ---------------------- ОСНОВНІ СТИЛІ ------------- */
+
+body {
+  font-family: Montserrat Alternates, sans-serif;
+  color: var(--main-txt-color);
+  background-color: var(--primary-bg-color);
+  font-size: 14px;
+  letter-spacing: 0.02em;
+}
+
+.container {
+  width: 375px;
+  margin: 0 auto;
+  padding: 0 10px;
+  border: 1px solid #ff0808;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding: 0 0px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 1440px;
+    padding: 0 0px;
+  }
+}
+
+/* ---------------------- СЕКЦІЯ ХЕДЕР(ШАПКА ПРОФІЛЮ) ------------- */
+
+.header-wrap {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.navigation {
+  display: flex;
+  gap: 24px;
+}
+.navigation-list {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+
+
+.contacts {
+  display: flex;
+}
+.logo {
+  font-size: 34px;
+
+}
+
+/* ---------------------- СЕКЦІЯ ЗАГОЛОВОК ------------- */
+
+.hero {
+  max-width: 1440px;
+  color: var(--primary-bg-color);
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--dark-bg-color);
+  background-image: linear-gradient(
+    to right,
+    rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)
+  ),
+    url(./images/bg-image.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* filter: grayscale(100%); */
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.title-wrap{
+ height: 550px;
+ display: inline-flex;
+ flex-direction: column-reverse;
+ align-items: flex-end;
+ justify-items: end;
+ padding: 15px;
+
+}
+
+.hero-title {
+  font-family: Alumni Sans Pinstripe, sans-serif;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  color: var(--white-color);
+  /* width: 494px; */
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+.slide-in-left {
+	-webkit-animation: slide-in-left 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-left 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+/**
+ * ----------------------------------------
+ * animation slide-in-left
+ * ----------------------------------------
+ */
+ @-webkit-keyframes slide-in-left {
+    0% {
+      -webkit-transform: translateX(-1000px);
+              transform: translateX(-1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-left {
+    0% {
+      -webkit-transform: translateX(-1000px);
+              transform: translateX(-1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .hero-subtitle{
+font-size: 18px;
+  }
+
+  .slide-in-bottom {
+	-webkit-animation: slide-in-bottom 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-bottom 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+/**
+ * ----------------------------------------
+ * animation slide-in-bottom
+ * ----------------------------------------
+ */
+ @-webkit-keyframes slide-in-bottom {
+    0% {
+      -webkit-transform: translateY(1000px);
+              transform: translateY(1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-bottom {
+    0% {
+      -webkit-transform: translateY(1000px);
+              transform: translateY(1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
