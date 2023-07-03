@@ -214,9 +214,9 @@ body {
   }
 
   .links.current {
-  font-weight: bold;
+    text-shadow: 1px 1px 2px rgb(129, 127, 127), 0 0 1em rgb(75, 75, 75), 0 0 0.2em rgb(67, 67, 67);
   }
-  
+
   .links:hover,
   .links:focus {
     transform: scale(0.5);
@@ -370,4 +370,36 @@ body {
     transform: translateY(0);
     opacity: 1;
   }
+}
+
+/* ---------------------- СТВОРЕНО НАМИ ------------- */
+
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--dark-bg-color);
+  margin: 0px 0px 72px 0px;
+  padding: 0px;
+}
+.tasks {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.task-wrap{
+  margin: 0 auto;
+}
+.tasks-list {
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
