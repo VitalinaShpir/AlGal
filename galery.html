@@ -6,9 +6,12 @@
     <title>MetalWood Artistry</title>
 
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@1&family=Montserrat+Alternates:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@1&family=Montserrat+Alternates:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Modern normalize -->
     <link
@@ -17,6 +20,7 @@
     />
 
     <!-- Custom styles -->
+    <link href="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
@@ -44,25 +48,23 @@
 
         <ul class="contacts list">
           <li class="contacts-item">
-            <a class="links contacts-link" href="mailto:info@devstudio.com"
-              > <svg class="icon-contacts" width="21" height="21">
-                <use href="./images/icons.svg#icon-mail4"></use>
-              </svg></a
-            >
+            <a class="links contacts-link" href="mailto:info@devstudio.com">
+              <svg class="icon-contacts" width="21" height="21">
+                <use href="./images/icons.svg#icon-mail4"></use></svg></a>
           </li>
           <li class="contacts-item">
-            <a class="links contacts-link" href="tel:+380937556159"
-              > <svg class="icon-contacts" width="21" height="21">
-                <use href="./images/icons.svg#icon-phone1"></use>
-              </svg></a
-            >
+            <a class="links contacts-link" href="tel:+380937556159">
+              <svg class="icon-contacts" width="21" height="21">
+                <use href="./images/icons.svg#icon-phone1"></use></svg></a>
           </li>
           <li class="contacts-item">
-            <a class="links contacts-link"  href="https://www.instagram.com" target="_blank"
-              > <svg class="icon-contacts" width="21" height="21">
-                <use href="./images/icons.svg#icon-instagram"></use>
-              </svg></a
+            <a
+              class="links contacts-link"
+              href="https://www.instagram.com"
+              target="_blank"
             >
+              <svg class="icon-contacts" width="21" height="21">
+                <use href="./images/icons.svg#icon-instagram"></use></svg></a>
           </li>
         </ul>
 
@@ -74,54 +76,234 @@
       </div>
     </header>
 
-
     <div class="mobile-menu" data-menu>
-      <button data-menu-close type="button" class="mobile-menu-btn-close modal-close-btn">
+      <button
+        data-menu-close
+        type="button"
+        class="mobile-menu-btn-close modal-close-btn"
+      >
         <svg class="modal-close-btn-icon" width="20" height="20">
           <use href="./images/icons.svg#icon-close"></use>
         </svg>
       </button>
 
-      
       <ul class="mobile-menu-list list">
-        <li class="mobile-menu-item"><a class="links" href="./index.html">Головна</a></li>
-        <li class="mobile-menu-item"><a class="links" href="./galery.html">Галерея</a></li>
+        <li class="mobile-menu-item">
+          <a class="links" href="./index.html">Головна</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="links" href="./galery.html">Галерея</a>
+        </li>
         <li class="mobile-menu-item"><a class="links" href="">Про нас</a></li>
       </ul>
 
-  <ul class="mob-contacts list">
-    <li class="mob-contacts-item">
-      <a class="links mob-contacts-link" href="mailto:info@devstudio.com"
-        > <svg class="icon-contacts" width="21" height="21">
-          <use href="./images/icons.svg#icon-mail4"></use>
-        </svg></a
-      >
-    </li>
-    <li class="mob-contacts-item">
-      <a class="links mob-contacts-link" href="tel:+380937556159"
-        > <svg class="icon-contacts" width="21" height="21">
-          <use href="./images/icons.svg#icon-phone1"></use>
-        </svg></a
-      >
-    </li>
-    <li class="mob-contacts-item">
-      <a class="links mob-contacts-link"  href="https://www.instagram.com" target="_blank"
-        > <svg class="icon-contacts" width="21" height="21">
-          <use href="./images/icons.svg#icon-instagram"></use>
-        </svg></a
-      >
-    </li>
-  </ul>
-
+      <ul class="mob-contacts list">
+        <li class="mob-contacts-item">
+          <a class="links mob-contacts-link" href="mailto:info@devstudio.com">
+            <svg class="icon-contacts" width="21" height="21">
+              <use href="./images/icons.svg#icon-mail4"></use></svg></a>
+        </li>
+        <li class="mob-contacts-item">
+          <a class="links mob-contacts-link" href="tel:+380937556159">
+            <svg class="icon-contacts" width="21" height="21">
+              <use href="./images/icons.svg#icon-phone1"></use></svg></a>
+        </li>
+        <li class="mob-contacts-item">
+          <a
+            class="links mob-contacts-link"
+            href="https://www.instagram.com"
+            target="_blank"
+          >
+            <svg class="icon-contacts" width="21" height="21">
+              <use href="./images/icons.svg#icon-instagram"></use></svg></a>
+        </li>
+      </ul>
     </div>
 
     <!------------------ main content --------------------->
     <main>
-  
+      <section class="portfolio">
+        <div class="container">
+
+          <h1 class="visually-hidden" hidden>Our projects</h1>
+
+          <ul class="gallery list">
+            <li class="gallery__item">
+              <a class="gallery__link" href="./images/img12-m.jpg">
+                <img
+                  class="gallery__image"
+                  src="./images/img12-m.jpg"
+                  alt="Тумба"
+                  width="360"
+                  height="300"/>
+              </a>
+            </li>
+
+            <li class="gallery__item">
+              <a class="gallery__link" href="./images/img16-m.jpg">
+                <img
+                  class="gallery__image"
+                  src="./images/img16-m.jpg"
+                  alt="Тумба"
+                  width="360"
+                  height="300"/>
+              </a>
+            </li>
+
+            <li class="gallery__item">
+              <a class="gallery__link" href="./images/img9.jpg">
+                <img
+                  class="gallery__image"
+                  src="./images/img9.jpg"
+                  alt="Тумба"
+                  width="360"
+                  height="300"/>
+              </a>
+            </li>
+
+            <li class="gallery__item">
+              <a class="gallery__link" href="./images/img11.jpg">
+                <img
+                  class="gallery__image"
+                  src="./images/img11.jpg"
+                  alt="Тумба"
+                  width="360"
+                  height="300"/>
+              </a>
+            </li>
+
+            <li class="gallery__item">
+              <a class="gallery__link" href="./images/img30.jpg">
+                <img
+                  class="gallery__image"
+                  src="./images/img30.jpg"
+                  alt="Тумба"
+                  width="360"
+                  height="300"/>
+              </a>
+            </li>
+
+            <li class="gallery__item">
+              <a class="gallery__link" href="./images/img38.jpg">
+                <img
+                  class="gallery__image"
+                  src="./images/img38.jpg"
+                  alt="Тумба"
+                  width="360"
+                  height="300"/>
+              </a>
+            </li>
+
+            <li class="gallery__item">
+              <a class="gallery__link" href="./images/img37.jpg">
+                <img
+                  class="gallery__image"
+                  src="./images/img37.jpg"
+                  alt="Тумба"
+                  width="360"
+                  height="300"/>
+              </a>
+            </li>
+
+            <li class="gallery__item">
+              <a class="gallery__link" href="./images/img39.jpg">
+                <img
+                  class="gallery__image"
+                  src="./images/img39.jpg"
+                  alt="Тумба"
+                  width="360"
+                  height="300"/>
+              </a>
+            </li>
+
+            <li class="gallery__item">
+              <a class="gallery__link" href="./images/img4.jpg">
+                <img
+                  class="gallery__image"
+                  src="./images/img4.jpg"
+                  alt="Тумба"
+                  width="360"
+                  height="300"/>
+              </a>
+            </li>
+
+            <li class="gallery__item">
+              <a class="gallery__link" href="./images/img28.jpg">
+                <img
+                  class="gallery__image"
+                  src="./images/img28.jpg"
+                  alt="Тумба"
+                  width="360"
+                  height="300"/>
+              </a>
+            </li>
+
+            <li class="gallery__item">
+              <a class="gallery__link" href="./images/img42.jpg">
+                <img
+                  class="gallery__image"
+                  src="./images/img42.jpg"
+                  alt="Тумба"
+                  width="360"
+                  height="300"/>
+              </a>
+            </li>
+
+            <li class="gallery__item">
+              <a class="gallery__link" href="./images/img32.jpg">
+                <img
+                  class="gallery__image"
+                  src="./images/img32.jpg"
+                  alt="Тумба"
+                  width="360"
+                  height="300"/>
+              </a>
+            </li>
+
+            <li class="gallery__item">
+              <a class="gallery__link" href="./images/img45.jpg">
+                <img
+                  class="gallery__image"
+                  src="./images/img45.jpg"
+                  alt="Тумба"
+                  width="360"
+                  height="300"/>
+              </a>
+            </li>
+
+            <li class="gallery__item">
+              <a class="gallery__link" href="./images/img34.jpg">
+                <img
+                  class="gallery__image"
+                  src="./images/img34.jpg"
+                  alt="Тумба"
+                  width="360"
+                  height="300"/>
+              </a>
+            </li>
+
+            <li class="gallery__item">
+              <a class="gallery__link" href="./images/img63.jpg">
+                <img
+                  class="gallery__image"
+                  src="./images/img63.jpg"
+                  alt="Тумба"
+                  width="360"
+                  height="300"/>
+              </a>
+            </li>
+
         
+
+
+          </ul>
+        </div>
+      </section>
     </main>
 
 
+    <script src="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.js"></script>
+    <script src="js/01-gallery.js" type="module"></script>
     <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
