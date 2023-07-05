@@ -74,7 +74,6 @@ body {
   width: 375px;
   margin: 0 auto;
   padding: 0 10px;
-  border: 1px solid #ff0808;
 }
 
 @media screen and (min-width: 768px) {
@@ -96,7 +95,8 @@ body {
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: var(--primary-bg-color);
-  border-bottom: 0.5px solid rgba(247, 247, 247, 0.2);
+  border-bottom: 1px solid rgba(247, 247, 247, 0.2);
+  box-shadow: 0 5px 5px rgba(128, 128, 128, 0.73);
   position: fixed;
   top: 0;
   left: 0;
@@ -389,8 +389,8 @@ body {
   padding: 0px;
 }
 .tasks {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 80px;
+  padding-bottom: 40px;
 }
 .task-wrap{
   margin: 0 auto;
@@ -411,28 +411,29 @@ body {
 /* ---------------------- НАША ЛОКАЦІЯ ------------- */
 
 .loc-section{
-  padding-top: 64px;
-  background-color: #F6F6F6; 
+  padding-top: 30px;
 }
 
 @media screen and (min-width: 768px) {
   .loc-section {
-          padding-top: 80px;
-          padding-bottom: 0;
+          padding-top: 30px;
+          padding-bottom: 30px;
       }
 }
 
 @media screen and (min-width: 1440px) {
   .loc-section {
-          padding-top: 100px;
+          padding-top: 40px;
       }
 }
 
 @media screen and (min-width: 1440px) {
   .loc-container {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: flex-start;
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+      /* flex-wrap: wrap;
+      align-items: flex-start; */
   }
 }
 
@@ -454,7 +455,7 @@ body {
 
 @media screen and (min-width: 1440px) {
   .loc-title {
-      margin-bottom: 0;
+      margin-bottom: 40px;
   }
 }
 
@@ -490,94 +491,6 @@ body {
       }
 }
 
-
-.loc-adr{
-  font-style: normal;
-}
-
-@media screen and (min-width: 1440px) {
-  .loc-adr {
-      align-self: flex-end;
-      margin-left: -322px;
-  }
-}
-
-.loc-txt{
-  font-size: 18px;
-  line-height: calc(24 / 18);
-  letter-spacing: -0.02em;
-  color: #000000;
-  margin-bottom: 28px;
-}
-
-
-@media screen and (min-width: 768px) {
-.loc-txt {
-      margin-bottom: 0;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .loc-adr-wrapper {
-      display: flex;
-      margin-left: 70px;
-  }
-}
-
-
-.loc-call-txt{
-  font-weight: 500;
-  font-size: 14px;
-  line-height: calc(18 / 14);
-  letter-spacing: -0.02em;
-  color: #121212;
-  margin-bottom: 12px;
-}
-
-@media screen and (min-width: 1440px) {
-  .loc-call-txt {
-      margin-right: 12px;
-      font-weight: 700;
-  }
-}
-
-
-@media screen and (min-width: 768px) {
-  .loc-adr {
-      display: flex;
-      justify-content: space-between;
-      align-items:center;
-  }
-}
-
-
-.loc-item:not(:last-child){
-  margin-bottom: 4px;
-}
-
-@media screen and (min-width: 768px) {
-  .loc-item:not(:last-child) {
-          margin-bottom: 2px;
-      }
-}
-
-
-
-.loc-link{
-  font-size: 14px;
-  line-height: calc(18 / 14);
-  letter-spacing: -0.02em;
-  color: #121212;
-  padding: 2px 0;
-}
-
-@media screen and (min-width: 768px) {
-  .loc-link {
-      font-size: 18px;
-      line-height: calc(24 / 18);
-      padding: 1px 0;
-      }
-}
 
 
 
@@ -640,3 +553,80 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+
+/* ---------------------- FOOTER ------------- */
+
+.footer{
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--primary-bg-color);
+  background-color: var(--dark-bg-color);
+  background-image: linear-gradient(
+      to right,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(./images/footer-bg2.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+.footer-box{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer-txt{
+  margin-top: 25px;
+  font-size: 18px;
+  width: 260px;
+  color: var(--white-color);
+}
+
+.logof{
+  color: var(--white-color);
+  font-size: 46px;
+}
+.fottitle{
+  font-size: 24px;
+  color: var(--white-color);
+  font-weight: 500;
+  font-size: 24px;
+  color: var(--white-color);
+  margin-bottom: 12px;
+}
+
+.loc-item{
+margin-bottom: 15px;
+}
+.loc-txt{
+  font-size: 18px;
+  color: var(--white-color);
+  margin-bottom: 28px;
+}
+
+/* 
+@media screen and (min-width: 768px) {
+.loc-txt {
+      margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .loc-adr-wrapper {
+      display: flex;
+      margin-left: 70px;
+  }
+} */
+
+
+
+.loc-link{
+  font-size: 14px;
+  color: var(--white-color);
+  padding: 2px 0;
+}
+
