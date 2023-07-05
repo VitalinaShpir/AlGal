@@ -6,9 +6,12 @@
     <title>MetalWood Artistry</title>
 
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@1&family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@1&family=PT+Sans+Narrow:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Modern normalize -->
     <link
@@ -17,6 +20,10 @@
     />
 
     <!-- Custom styles -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
@@ -31,13 +38,13 @@
           >
           <ul class="navigation-list list">
             <li class="navigation-item">
-              <a class="links current active" href="./index.html">Головна</a>
+              <a class="links" href="./index.html">Головна</a>
             </li>
             <li class="navigation-item">
-              <a class="links" href="./galery.html">Галерея</a>
+              <a class="links " href="./galery.html">Галерея</a>
             </li>
             <li class="navigation-item">
-              <a class="links" href="aboutcompany.html">Про нас</a>
+              <a class="links current active" href="aboutcompany.html">Про нас</a>
             </li>
           </ul>
         </nav>
@@ -56,7 +63,7 @@
           <li class="contacts-item">
             <a
               class="links contacts-link"
-              href="https://instagram.com/galkin_aleksandr1?igshid=MTIzZWMxMTBkOA=="
+              href="https://www.instagram.com"
               target="_blank"
             >
               <svg class="icon-contacts" width="21" height="21">
@@ -76,8 +83,7 @@
       <button
         data-menu-close
         type="button"
-        class="mobile-menu-btn-close modal-close-btn"
-      >
+        class="mobile-menu-btn-close modal-close-btn">
         <svg class="modal-close-btn-icon" width="20" height="20">
           <use href="./images/icons.svg#icon-close"></use>
         </svg>
@@ -90,7 +96,9 @@
         <li class="mobile-menu-item">
           <a class="links" href="./galery.html">Галерея</a>
         </li>
-        <li class="mobile-menu-item"><a class="links" href="aboutcompany.html">Про нас</a></li>
+        <li class="mobile-menu-item">
+          <a class="links" href="aboutcompany.html">Про нас</a>
+        </li>
       </ul>
 
       <ul class="mob-contacts list">
@@ -107,105 +115,47 @@
         <li class="mob-contacts-item">
           <a
             class="links mob-contacts-link"
-            href="https://instagram.com/galkin_aleksandr1?igshid=MTIzZWMxMTBkOA=="
+            href="https://www.instagram.com"
             target="_blank"
           >
             <svg class="icon-contacts" width="21" height="21">
-              <use href="./images/icons.svg#icon-instagram"></use></svg ></a>
+              <use href="./images/icons.svg#icon-instagram"></use></svg></a>
         </li>
       </ul>
     </div>
 
-    <!------------------ MAIN CONTENT --------------------->
+    <!------------------ main content --------------------->
     <main>
-      <!------------------ HERO --------------------->
-      <section class="hero">
-        <div class="container title-wrap">
-          <p class="hero-subtitle slide-in-bottom">Краса в деталях</p>
-          <h1 class="hero-title slide-in-left">
-            Меблі ручної роботи для вашого дому
-          </h1>
-        </div>
-      </section>
-
-      <!------------------ НАШІ РОБОТИ--------------------->
-
-      <section class="tasks">
-        <div class="container task-wrap">
-          <h2 class="section-title">Створено нами</h2>
-          <ul class="tasks-list list">
-            <li class="tasks-item">
-              <img
-                src="./images/img12-m.jpg"
-                alt="photo work 01"
-                width="360"
-                height="300"
-              />
-            </li>
-            <li class="tasks-item">
-              <img
-                src="./images/img16-m.jpg"
-                alt="photo work 02"
-                width="360"
-                height="300"
-              />
-            </li>
-            <li class="tasks-item">
-              <img
-                src="./images/img18-m.jpg"
-                alt="photo work 03"
-                width="360"
-                height="300"
-              />
-            </li>
-            <li class="tasks-item">
-              <img
-                src="./images/img19-m.jpg"
-                alt="photo work 04"
-                width="360"
-                height="300"
-              />
-            </li>
-            <li class="tasks-item">
-              <img
-                src="./images/img2-m.jpg"
-                alt="photo work 05"
-                width="360"
-                height="300"
-              />
-            </li>
-            <li class="tasks-item">
-              <img
-                src="./images/img33-m.jpg"
-                alt="photo work 06"
-                width="360"
-                height="300"
-              />
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <!------------------ НАША ЛОКАЦІЯ--------------------->
-
-      <section class="loc-section">
-        <div class="container loc-container">
-          <h2 class="loc-title">Як нас знайти</h2>
-
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d1268.5467346406701!2d30.644135492407344!3d50.51382764838529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e0!4m0!4m3!3m2!1d50.514029199999996!2d30.644323099999998!5e0!3m2!1suk!2sua!4v1688564567278!5m2!1suk!2sua"
-            width="600"
-            height="450"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
+      <section class="about-section">
+        <h2 class="about-title">Про нас</h2>
+        <p class="about-subtitle">
+          "Металева майстерність, дерев'яна естетика лофту"
+        </p>
+        <p class="about-txt">
+          Наша компанія є виробником меблів з металу і дерева в стилі лофт. Ми
+          впевнені, що меблі мають велике значення в створенні атмосфери та
+          втіленні індивідуальності в просторі. Тому ми присвятили себе
+          мистецтву поєднання двох різних матеріалів - металу і дерева - для
+          створення унікальних і вражаючих лофтових меблів. Наша мета -
+          перетворити простір вашого житла, офісу або комерційного приміщення на
+          втілення сучасного стилю лофт. Ми розуміємо, що лофтовий стиль
+          відрізняється своєю сміливістю, відкритістю і промисловим шармом. Тому
+          кожен наш меблевий виріб відображає ці характеристики. Наша команда
+          талановитих дизайнерів та майстрів рукотворного виробництва працює
+          разом, щоб створювати меблі, які виражають смак і особливості наших
+          клієнтів. Ми ретельно підбираємо найкращі матеріали, які поєднують
+          міцність металу з теплом і природністю дерева. Кожна деталь із дерева
+          вибирається з натуральної краси, зберігаючи його унікальність. Наші
+          меблі відзначаються простотою форм, геометричними лініями і сміливим
+          поєднанням кольорів. Вони створюють атмосферу індустріальної
+          елегантності, додаючи приміщенню витонченості і стилю. Наші вироби
+          включають столи, стільці, полиці, шафи, ліжка та багато іншого, що
+          допомагає вам створити затишне середовище у лофтовому стилі.
+        </p>
       </section>
     </main>
 
-     <!------------------ FOOTER--------------------->
+    <!------------------ FOOTER--------------------->
 
     <footer class="footer">
       <div class="container footer-box">
@@ -213,9 +163,7 @@
           <a class="logof" href="./index.html"
             ><span class="accent-logo">Metal</span
             ><span class="logo-hd">loft</span></a>
-          <p class="footer-txt">
-            "Майстерність металу та дерева в стилі лофт"
-          </p>
+          <p class="footer-txt">"Майстерність металу та дерева в стилі лофт"</p>
         </div>
 
         <div>
@@ -228,10 +176,14 @@
               <p class="fottitle">Подзвоніть нам:</p>
               <ul class="loc-list">
                 <li class="loc-item">
-                  <a class="loc-link" href="tel:0937556159">+38(093) 755 61 59</a>
+                  <a class="loc-link" href="tel:0937556159"
+                    >+38(093) 755 61 59</a
+                  >
                 </li>
                 <li class="loc-item">
-                  <a class="loc-link" href="tel:0952216635">+38(095) 221 66 35</a>
+                  <a class="loc-link" href="tel:0952216635"
+                    >+38(095) 221 66 35</a
+                  >
                 </li>
               </ul>
             </div>
@@ -240,6 +192,8 @@
       </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.js"></script>
+    <script src="js/01-gallery.js" type="module"></script>
     <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

@@ -213,7 +213,7 @@ body {
   }
 
   .links {
-    font-size: 18px;
+    font-size: 22px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
@@ -634,7 +634,29 @@ margin-bottom: 15px;
 
 .loc-link{
   font-size: 14px;
-  color: var(--white-color);
   padding: 2px 0;
 }
 
+/* ---------------------- ПРО НАС ------------- */
+
+.about-section{
+  padding: 120px 60px 40px 60px;
+  text-align: center;
+}
+
+.about-title{
+  font-size: 46px;
+  margin-bottom: 36px;
+}
+
+.about-subtitle{
+margin-bottom: 24px;
+  font-size: 36px;
+}
+
+.about-txt{
+  margin: 0 auto;
+  width: 1000px;
+  font-size: 24px;
+  line-height: 1.5;
+}
