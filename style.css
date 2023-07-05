@@ -63,7 +63,7 @@ a {
 /* ---------------------- ОСНОВНІ СТИЛІ ------------- */
 
 body {
-  font-family: Montserrat Alternates, sans-serif;
+  font-family: PT Sans Narrow, sans-serif;
   color: var(--main-txt-color);
   background-color: var(--primary-bg-color);
   font-size: 14px;
@@ -105,7 +105,9 @@ body {
 }
 
 .logo {
-  font-size: 34px;
+  font-family: Alumni Sans Pinstripe, sans-serif;
+  font-size: 56px;
+  font-weight: bold;
 }
 .navigation-list {
   display: none;
@@ -379,11 +381,13 @@ body {
 /* ---------------------- СТВОРЕНО НАМИ ------------- */
 
 .section-title {
-  font-weight: 700;
-  font-size: 36px;
+  font-family: PT Sans Narrow, sans-serif;
+  font-weight: 400;
+  font-size: 56px;
   line-height: 1.1;
+  line-height: calc(40 / 40);
+  letter-spacing: -0.02em;
   text-align: center;
-  text-transform: capitalize;
   color: var(--dark-bg-color);
   margin: 0px 0px 72px 0px;
   padding: 0px;
@@ -438,11 +442,13 @@ body {
 }
 
 .loc-title{
-  font-weight: 500;
-  font-size: 40px;
+  font-family: PT Sans Narrow, sans-serif;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 1.1;
   line-height: calc(40 / 40);
   letter-spacing: -0.02em;
-  color: #121212;
+  color: var(--dark-bg-color);
   margin-bottom: 32px;
 }
 
@@ -587,8 +593,10 @@ body {
 }
 
 .logof{
+  font-family: Alumni Sans Pinstripe, sans-serif;
   color: var(--white-color);
-  font-size: 46px;
+  font-size: 56px;
+  font-weight: bold;
 }
 .fottitle{
   font-size: 24px;
