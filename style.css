@@ -635,6 +635,7 @@ margin-bottom: 15px;
 .loc-link{
   font-size: 14px;
   padding: 2px 0;
+  color: var(--white-color);
 }
 
 /* ---------------------- ПРО НАС ------------- */
